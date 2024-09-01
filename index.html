@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-co">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav">
+        <img src="./img/Logo.png" alt="LogoAluraLatam" />
+        <div class="redes-sociales">
+          <a
+            href="https://www.linkedin.com/in/johan-steven-rodriguez-lopez/"
+            target="_blank"
+          >
+            <img src="./img/link.png" alt="LinkedIn" class="icono-redes" />
+          </a>
+          <a href="https://github.com/StiviMoon" target="_blank">
+            <img src="./img/github.png" alt="GitHub" class="icono-redes" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-input">
+        <textarea
+          class="texto-input"
+          placeholder="Ingrese el texto aqui"
+          id="input-entrada"
+        ></textarea>
+        <h2>By StiviMoon</h2>
+        <div class="contenedor-botones">
+          <button class="botones" id="E" onclick="manejarClick()">
+            Encriptar
+          </button>
+          <button class="botones" id="D" onclick="manejarClickDesencriptar()">
+            Desencriptar
+          </button>
+          <button class="botones" id="L" onclick="limpiarCaja()">
+            Limpiar
+          </button>
+        </div>
+      </section>
+      <section class="section-resultado">
+        <div class="contenedor-1" id="myDIV">
+          <img class="img1" src="./img/Muñeco.png" alt="Muñeco" />
+          <h3 class="mensaje-titulo">Ningún mensaje fue encontrado</h3>
+          <p class="parrafo">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <div class="contenedor-2" id="myResultado" style="display: none">
+          <textarea
+            class="texto-input"
+            id="input-resultado"
+            placeholder="Resultado"
+          ></textarea>
+          <div class="contenedor-botones">
+            <button class="botones" id="copy" onclick="copiar()">Copiar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="toast-container"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
