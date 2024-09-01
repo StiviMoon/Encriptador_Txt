@@ -11,6 +11,8 @@ function manejarClick() {
     mostrarToast("error", "No has ingresado ningún texto");
   } else {
     const textoEncriptado = encriptarTexto(input);
+    mostrarToast("success", "Texto encriptado");
+
     document.getElementById("input-resultado").value = textoEncriptado;
     mostrarResultado();
   }
@@ -23,6 +25,8 @@ function manejarClickDesencriptar() {
     mostrarToast("error", "No has ingresado ningún texto");
   } else {
     const textoDesencriptado = desencriptarTexto(input);
+    mostrarToast("success", "Texto desencriptado");
+
     document.getElementById("input-resultado").value = textoDesencriptado;
     mostrarResultado();
   }
